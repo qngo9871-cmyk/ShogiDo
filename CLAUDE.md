@@ -107,18 +107,16 @@ Native iOS app for playing Shogi (Japanese chess). Dual-market release: English
   (the auth-key flags alone weren't enough this time, unlike the archived pattern in
   `~/.claude/CLAUDE.md` which only mentions the auth-key flags).
 
-  **🔴 BLOCKED — 3 manual steps only Q can do (all web-UI-only, no API path exists):**
-  1. **Tick the Pro IAP into the version's own page** (App Store Connect → Shogi Do →
-     version 1.0.0 → "In-App Purchases and Subscriptions" → select → Done) — the
-     well-documented LAW: this can NOT be done from the IAP's own page (creates an
-     orphaned draft) and can NOT be done via the `reviewSubmissionItems` API for a
-     first IAP.
-  2. **App Privacy nutrition labels** — no API field exists for this at all.
-  3. **Un-tick Vision Pro + iPhone-on-Mac availability** (both default ON) — standard
-     per-submit checklist item across this whole portfolio.
-
-  Then Submit for Review. Everything else — every field, every asset, every price — is
-  already in place.
+  **🟢 SUBMITTED 2026-07-19.** Q ticked the Pro IAP into version 1.0.0's own page,
+  filled App Privacy nutrition labels, un-ticked Vision Pro + iPhone-on-Mac. That left
+  a `reviewSubmissions` draft (`READY_FOR_REVIEW`, `submittedDate: null`) whose only
+  attached item was the IAP — **the version itself was never actually attached**, so
+  `PATCH .../reviewSubmissions/{id} {submitted:true}` 409'd
+  (`RELATIONSHIP.REQUIRED` / `appStoreVersionForReview`). Fixed by `POST
+  reviewSubmissionItems` with an explicit `appStoreVersion` relationship pointing at
+  the version, THEN the submit PATCH succeeded: `state: WAITING_FOR_REVIEW`,
+  `submittedDate` set. releaseType is `AFTER_APPROVAL` — no further action needed once
+  Apple approves it.
 
 ## Instructions for Claude Code
 At the end of every session, update the Current State section to reflect progress made.

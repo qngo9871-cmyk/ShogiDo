@@ -1,0 +1,398 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06489F480E3440006BBC2DCE /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ADB7D07895BD0867C4E8EE /* GameModel.swift */; };
+		0CD2286145FA2A6D9212BD64 /* AIPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08158DC423394FD412963C5 /* AIPlayer.swift */; };
+		10DDE1656BFD2656AFF4F575 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADD8E7581F19940E1F2B35B /* Board.swift */; };
+		21F7433E43F40668770FF573 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CA6FCF08B34F19EFCC59D4 /* GameView.swift */; };
+		2C88FB6743D19E5A0C90F429 /* ShogiDoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C94655DC0F8A0FD4E00E3A /* ShogiDoApp.swift */; };
+		2F8D0DB45BE7E447425DEE59 /* Piece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D5699EF80D7BD491F5BF7 /* Piece.swift */; };
+		3595840C498F026F6ABE3214 /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBA1C01CFF4F0CA9970A76B /* PurchaseManager.swift */; };
+		55103F781F59F1CC145371F1 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = EC7A9F0234A64FD470884340 /* Localizable.xcstrings */; };
+		6F99E0FAFE70041E733498C5 /* MoveGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C2644121ED57572B0D8967 /* MoveGenerator.swift */; };
+		73BC996503852444222204C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69B1FE9D1769192AB96073A9 /* Assets.xcassets */; };
+		AF8EB838F8491A959170677F /* PieceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89ECEB149318234BCE772C6 /* PieceView.swift */; };
+		C188C2633D62D8BCA7B3C7CC /* Rules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDDBA25321ED8D7FFE926A0 /* Rules.swift */; };
+		C32D7016921EC376CB368E21 /* UpgradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8CB039A330D6EC0A2575A9 /* UpgradeView.swift */; };
+		CB375D24994A14B1F79BD04F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C429F863471383DB0EE2CB /* HomeView.swift */; };
+		D452AE6E64F81BFF560319F8 /* Products.storekit in Resources */ = {isa = PBXBuildFile; fileRef = D89FBC05707A292331710D81 /* Products.storekit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0BDDBA25321ED8D7FFE926A0 /* Rules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rules.swift; sourceTree = "<group>"; };
+		13085933164C82CDFB157907 /* ShogiDo.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ShogiDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C7D5699EF80D7BD491F5BF7 /* Piece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Piece.swift; sourceTree = "<group>"; };
+		69B1FE9D1769192AB96073A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7CBA1C01CFF4F0CA9970A76B /* PurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
+		C5C2644121ED57572B0D8967 /* MoveGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveGenerator.swift; sourceTree = "<group>"; };
+		CE8CB039A330D6EC0A2575A9 /* UpgradeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeView.swift; sourceTree = "<group>"; };
+		D7ADB7D07895BD0867C4E8EE /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		D89FBC05707A292331710D81 /* Products.storekit */ = {isa = PBXFileReference; path = Products.storekit; sourceTree = "<group>"; };
+		E2CA6FCF08B34F19EFCC59D4 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		E7C94655DC0F8A0FD4E00E3A /* ShogiDoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShogiDoApp.swift; sourceTree = "<group>"; };
+		E89ECEB149318234BCE772C6 /* PieceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceView.swift; sourceTree = "<group>"; };
+		EC7A9F0234A64FD470884340 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		F08158DC423394FD412963C5 /* AIPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIPlayer.swift; sourceTree = "<group>"; };
+		F8C429F863471383DB0EE2CB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FADD8E7581F19940E1F2B35B /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		2424AF4F3156C1105BC4539D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13085933164C82CDFB157907 /* ShogiDo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AEF216BFC96D22B71429FE5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F08158DC423394FD412963C5 /* AIPlayer.swift */,
+				FADD8E7581F19940E1F2B35B /* Board.swift */,
+				D7ADB7D07895BD0867C4E8EE /* GameModel.swift */,
+				C5C2644121ED57572B0D8967 /* MoveGenerator.swift */,
+				4C7D5699EF80D7BD491F5BF7 /* Piece.swift */,
+				7CBA1C01CFF4F0CA9970A76B /* PurchaseManager.swift */,
+				0BDDBA25321ED8D7FFE926A0 /* Rules.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		55489606FA6EBFA0A22B76D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E2CA6FCF08B34F19EFCC59D4 /* GameView.swift */,
+				F8C429F863471383DB0EE2CB /* HomeView.swift */,
+				E89ECEB149318234BCE772C6 /* PieceView.swift */,
+				CE8CB039A330D6EC0A2575A9 /* UpgradeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7455D7DA9D87E44FF8BA24FF /* ShogiDo */ = {
+			isa = PBXGroup;
+			children = (
+				69B1FE9D1769192AB96073A9 /* Assets.xcassets */,
+				EC7A9F0234A64FD470884340 /* Localizable.xcstrings */,
+				D89FBC05707A292331710D81 /* Products.storekit */,
+				E7C94655DC0F8A0FD4E00E3A /* ShogiDoApp.swift */,
+				3AEF216BFC96D22B71429FE5 /* Core */,
+				55489606FA6EBFA0A22B76D5 /* Views */,
+			);
+			path = ShogiDo;
+			sourceTree = "<group>";
+		};
+		D2F2BB046CF48E54DDD6704B = {
+			isa = PBXGroup;
+			children = (
+				7455D7DA9D87E44FF8BA24FF /* ShogiDo */,
+				2424AF4F3156C1105BC4539D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39225EC71D439988BB6086AC /* ShogiDo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B78475979836B4288C86676 /* Build configuration list for PBXNativeTarget "ShogiDo" */;
+			buildPhases = (
+				4B01199495619F343BA037E1 /* Sources */,
+				37B07E60B1C483D7019F3FD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShogiDo;
+			packageProductDependencies = (
+			);
+			productName = ShogiDo;
+			productReference = 13085933164C82CDFB157907 /* ShogiDo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0906F6460FC0E3FFF09A534E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					39225EC71D439988BB6086AC = {
+						DevelopmentTeam = SM99L22Q84;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 27E0AF4FA753B1D743DCD5BB /* Build configuration list for PBXProject "ShogiDo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				ja,
+			);
+			mainGroup = D2F2BB046CF48E54DDD6704B;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 2424AF4F3156C1105BC4539D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39225EC71D439988BB6086AC /* ShogiDo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37B07E60B1C483D7019F3FD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73BC996503852444222204C2 /* Assets.xcassets in Resources */,
+				55103F781F59F1CC145371F1 /* Localizable.xcstrings in Resources */,
+				D452AE6E64F81BFF560319F8 /* Products.storekit in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B01199495619F343BA037E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CD2286145FA2A6D9212BD64 /* AIPlayer.swift in Sources */,
+				10DDE1656BFD2656AFF4F575 /* Board.swift in Sources */,
+				06489F480E3440006BBC2DCE /* GameModel.swift in Sources */,
+				21F7433E43F40668770FF573 /* GameView.swift in Sources */,
+				CB375D24994A14B1F79BD04F /* HomeView.swift in Sources */,
+				6F99E0FAFE70041E733498C5 /* MoveGenerator.swift in Sources */,
+				2F8D0DB45BE7E447425DEE59 /* Piece.swift in Sources */,
+				AF8EB838F8491A959170677F /* PieceView.swift in Sources */,
+				3595840C498F026F6ABE3214 /* PurchaseManager.swift in Sources */,
+				C188C2633D62D8BCA7B3C7CC /* Rules.swift in Sources */,
+				2C88FB6743D19E5A0C90F429 /* ShogiDoApp.swift in Sources */,
+				C32D7016921EC376CB368E21 /* UpgradeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		334AE4B95632EC3F0429DAB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_LANGUAGE = en;
+				DEVELOPMENT_TEAM = SM99L22Q84;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		75080F6B6B04E735F344B29A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_LANGUAGE = en;
+				DEVELOPMENT_TEAM = SM99L22Q84;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A304781F7D64EAADBF4D605A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Shogi Do";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.quyenngo.shogido;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B62917F6619D12C5888C6D0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Shogi Do";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.quyenngo.shogido;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27E0AF4FA753B1D743DCD5BB /* Build configuration list for PBXProject "ShogiDo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75080F6B6B04E735F344B29A /* Debug */,
+				334AE4B95632EC3F0429DAB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2B78475979836B4288C86676 /* Build configuration list for PBXNativeTarget "ShogiDo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B62917F6619D12C5888C6D0B /* Debug */,
+				A304781F7D64EAADBF4D605A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0906F6460FC0E3FFF09A534E /* Project object */;
+}

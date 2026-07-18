@@ -1,0 +1,36 @@
+{
+  "identifier" : "1A2B3C4D-5E6F-7A8B-9C0D-1E2F3A4B5C6D",
+  "type" : "com.apple.storekit-configuration",
+  "version" : 3,
+  "products" : [
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : false,
+      "internalID" : "2B3C4D5E-6F7A-8B9C-0D1E-2F3A4B5C6D7E",
+      "localizations" : [
+        {
+          "description" : "Unlock Hard AI, tsumeshogi puzzles, and alt board themes",
+          "displayName" : "Shogi Do Pro",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.quyenngo.shogido.pro",
+      "referenceName" : "Shogi Do Pro Unlock",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "",
+    "_developerTeamID" : "SM99L22Q84",
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      }
+    ]
+  }
+}

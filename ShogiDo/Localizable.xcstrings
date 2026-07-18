@@ -1,0 +1,194 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "New Game" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New Game"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新規対局"
+          }
+        }
+      }
+    },
+    "Settings" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settings"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定"
+          }
+        }
+      }
+    },
+    "Resign" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resign"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "投了"
+          }
+        }
+      }
+    },
+    "You Win" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You Win"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたの勝ちです"
+          }
+        }
+      }
+    },
+    "You Lose" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You Lose"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたの負けです"
+          }
+        }
+      }
+    },
+    "Sente" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Sente (Black)" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "先手" } }
+      }
+    },
+    "Gote" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Gote (White)" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "後手" } }
+      }
+    },
+    "Check" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Check!" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "王手！" } }
+      }
+    },
+    "Promote?" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Promote this piece?" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "この駒を成りますか？" } }
+      }
+    },
+    "Promote" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Promote" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "成る" } }
+      }
+    },
+    "Don't Promote" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Don't Promote" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "成らない" } }
+      }
+    },
+    "Home" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Home" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "ホーム" } }
+      }
+    },
+    "Easy" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Easy" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "初級" } }
+      }
+    },
+    "Normal" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Normal" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "中級" } }
+      }
+    },
+    "Hard" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Hard" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "上級" } }
+      }
+    },
+    "Unlock Pro" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Unlock Pro" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "Pro版を購入" } }
+      }
+    },
+    "Pro Feature" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Pro Feature" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "Pro機能" } }
+      }
+    },
+    "Hand" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Hand" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "持ち駒" } }
+      }
+    },
+    "Tsumeshogi" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Tsumeshogi Puzzles" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "詰将棋" } }
+      }
+    },
+    "Board Theme" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Board Theme" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "盤のテーマ" } }
+      }
+    },
+    "Unlock Hard AI, tsumeshogi puzzles, and alt board themes." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Unlock Hard AI, tsumeshogi puzzles, and alt board themes." } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "上級AI、詰将棋パズル、盤の追加テーマをアンロックします。" } }
+      }
+    },
+    "Restore Purchases" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Restore Purchases" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "購入を復元" } }
+      }
+    },
+    "Maybe Later" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Maybe Later" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "あとで" } }
+      }
+    }
+  },
+  "version" : "1.0"
+}

@@ -17,12 +17,10 @@ struct UpgradeView: View {
 
                 VStack(alignment: .leading, spacing: 10) {
                     featureRow("brain.head.profile", String(localized: "Hard"))
-                    featureRow("puzzlepiece.fill", String(localized: "Tsumeshogi"))
-                    featureRow("paintpalette.fill", String(localized: "Board Theme"))
                 }
                 .padding(.horizontal, 30)
 
-                Text(String(localized: "Unlock Hard AI, tsumeshogi puzzles, and alt board themes."))
+                Text(String(localized: "Unlock Hard AI."))
                     .font(.system(size: 13))
                     .foregroundStyle(.white.opacity(0.6))
                     .multilineTextAlignment(.center)

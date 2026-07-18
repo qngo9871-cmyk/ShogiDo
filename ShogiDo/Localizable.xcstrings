@@ -147,34 +147,16 @@
         "ja" : { "stringUnit" : { "state" : "translated", "value" : "Pro版を購入" } }
       }
     },
-    "Pro Feature" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Pro Feature" } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "Pro機能" } }
-      }
-    },
     "Hand" : {
       "localizations" : {
         "en" : { "stringUnit" : { "state" : "translated", "value" : "Hand" } },
         "ja" : { "stringUnit" : { "state" : "translated", "value" : "持ち駒" } }
       }
     },
-    "Tsumeshogi" : {
+    "Unlock Hard AI." : {
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Tsumeshogi Puzzles" } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "詰将棋" } }
-      }
-    },
-    "Board Theme" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Board Theme" } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "盤のテーマ" } }
-      }
-    },
-    "Unlock Hard AI, tsumeshogi puzzles, and alt board themes." : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Unlock Hard AI, tsumeshogi puzzles, and alt board themes." } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "上級AI、詰将棋パズル、盤の追加テーマをアンロックします。" } }
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Unlock Hard AI." } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "上級AIをアンロックします。" } }
       }
     },
     "Restore Purchases" : {

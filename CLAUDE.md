@@ -72,53 +72,53 @@ Native iOS app for playing Shogi (Japanese chess). Dual-market release: English
   see below).
 
 ## Current State
-- **2026-07-18 — v1 built end-to-end in one session: full rules engine, AI, game UI,
-  StoreKit, hosting, ASC scripts. Blocked only on Apple's mandatory manual app-shell
-  creation step.**
+- **2026-07-19 — fully built and submitted-except-one-tick.** App shell created by Q in
+  ASC UI (id=6792362960), everything else pushed via API.
 
   **Built:** full shogi rules engine (legal moves for all 8 piece types + promoted
   forms, drops with nifu/uchifuzume, forced vs optional promotion, checkmate detection)
   in `Core/Rules.swift` + `MoveGenerator.swift`, verified via standalone test harness
-  (`scripts/verify_rules.swift`, all 8 checks pass). Native Swift minimax AI with 3
-  difficulty levels (Easy/Normal free, Hard behind Pro), capture-first move ordering,
-  blunder-chance tuning per difficulty. Full SwiftUI game screen: 9x9 board, tap-to-move
-  with legal-move highlighting, hand trays for both players with tap-to-drop, promotion
-  confirmation dialog, checkmate alert. StoreKit 2 PurchaseManager + UpgradeView (mirrors
-  Hanafuda's proven pattern exactly, product `com.quyenngo.shogido.pro`, $2.99).
-  DEBUG builds force `isPro = true` (Q's own installs paywall-free, per established
-  pattern). Builds clean for both simulator and device. Verified visually in simulator
-  via a DEBUG-only `SHOGI_CAPTURE_GAME` launch-env hook (`ShogiDoApp.swift`) since no
-  UI-automation/accessibility access was available in this session to drive real taps.
+  (`scripts/verify_rules.swift`, all 8 checks pass — this caught a real sign-error bug).
+  Native Swift minimax AI with 3 difficulty levels (Easy/Normal free, Hard behind Pro).
+  Full SwiftUI game screen: 9x9 board, tap-to-move with legal-move highlighting, hand
+  trays with tap-to-drop, promotion confirmation dialog, checkmate alert. StoreKit 2
+  PurchaseManager + UpgradeView, product `com.quyenngo.shogido.pro` ($2.99, Hard AI
+  only — tsumeshogi/themes trimmed from the IAP copy since they weren't built, see
+  below). **First-launch onboarding + always-accessible `HowToPlayView`** (EN+JA,
+  `@AppStorage("hasSeenOnboarding")`, toolbar icon on Home) — added after Q's standing
+  rule [[feedback_app_onboarding_instructions]] that every app needs this. Local
+  `Products.storekit` wired into the scheme's Run action (`storeKitConfiguration` in
+  project.yml) so real IAP pricing renders in the simulator without a sandbox tester.
 
-  **Hosting:** repo at `github.com/qngo9871-cmyk/ShogiDo` (public), GitHub Pages live at
-  `qngo9871-cmyk.github.io/ShogiDo/` serving `docs/privacy-policy(-ja).html` +
-  `docs/support(-ja).html` — both English and Japanese versions live (200 OK confirmed).
+  **Hosting:** `github.com/qngo9871-cmyk/ShogiDo` (public), GitHub Pages live at
+  `qngo9871-cmyk.github.io/ShogiDo/` serving EN+JA privacy/support pages.
 
-  **ASC scripts prepared (all in `~/asc-tools/`), NOT yet run** — every one of them
-  requires the app to already exist in ASC, and it doesn't yet:
-  - `asc_register_shogido.py` — already run successfully; bundle `com.quyenngo.shogido`
-    registered (id=799R53HZ7M).
-  - `asc_push_shogido.py` — categories (GAMES/GAMES_BOARD/GAMES_STRATEGY), full en-US +
-    ja metadata (name/subtitle/keywords/description/promo/support+privacy URLs), the
-    `.pro` non-consumable IAP with both locales' localizations. Idempotent, ready to run
-    the moment the app shell exists.
-  - `asc_pricing_shogido.py` — app base price Free + IAP $2.99, looks up app/IAP IDs at
-    runtime (no hardcoding needed).
-  - `asc_push_shogido_review.py` — age rating (all descriptors NONE/false → 4+), App
-    Review Information (contact + paywall-access notes), `contentRightsDeclaration`,
-    version `copyright`/`usesIdfa`.
+  **ASC — all pushed via API:** app metadata (categories GAMES/GAMES_BOARD/
+  GAMES_STRATEGY, en-US+ja name/subtitle/keywords/description/promo/URLs via
+  `asc_push_shogido.py`), pricing (app free, IAP $2.99 via `asc_pricing_shogido.py`),
+  age rating (4+) + review contact/notes + copyright/contentRights (via
+  `asc_push_shogido_review.py`), 5 App Store screenshots per locale (home/board/
+  select/hand/check, via `capture_shots.py` + `asc_push_shogido_screenshots.py`), the
+  IAP's own private review screenshot (paywall, via
+  `asc_upload_shogido_iap_screenshot.py`). Build 2 (bumped from 1 after adding
+  onboarding) archived/exported/uploaded/attached to version 1.0.0 — exporting a
+  brand-new bundle's first distribution profile needed **both**
+  `-authenticationKeyPath/-ID/-IssuerID` **and** `-allowProvisioningUpdates` together
+  (the auth-key flags alone weren't enough this time, unlike the archived pattern in
+  `~/.claude/CLAUDE.md` which only mentions the auth-key flags).
 
-  **🔴 BLOCKED — one manual step needed from Q:** create the app shell in App Store
-  Connect UI (`POST /v1/apps` 403s for programmatic creation, as it always does — this
-  is not a bug, it's Apple's policy). Once that exists, re-run the three scripts above
-  in order (push → pricing → review), then proceed to archive/export/upload/screenshots/
-  submit — same as every other app in this portfolio.
+  **🔴 BLOCKED — 3 manual steps only Q can do (all web-UI-only, no API path exists):**
+  1. **Tick the Pro IAP into the version's own page** (App Store Connect → Shogi Do →
+     version 1.0.0 → "In-App Purchases and Subscriptions" → select → Done) — the
+     well-documented LAW: this can NOT be done from the IAP's own page (creates an
+     orphaned draft) and can NOT be done via the `reviewSubmissionItems` API for a
+     first IAP.
+  2. **App Privacy nutrition labels** — no API field exists for this at all.
+  3. **Un-tick Vision Pro + iPhone-on-Mac availability** (both default ON) — standard
+     per-submit checklist item across this whole portfolio.
 
-  **Not yet built:** tsumeshogi puzzle mode and alternate board/piece themes (both
-  promised in the Pro IAP description — need building before submission, or trim the
-  IAP copy if deferred to a later update), local two-player mode (not decided/scoped),
-  sennichite/jishogi endgame rules (v2 polish, noted above), App Store screenshots,
-  ExportOptions.plist, App Privacy nutrition labels (web-UI-only field, Q must fill).
+  Then Submit for Review. Everything else — every field, every asset, every price — is
+  already in place.
 
 ## Instructions for Claude Code
 At the end of every session, update the Current State section to reflect progress made.

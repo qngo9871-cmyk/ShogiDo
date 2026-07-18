@@ -170,6 +170,72 @@
         "en" : { "stringUnit" : { "state" : "translated", "value" : "Maybe Later" } },
         "ja" : { "stringUnit" : { "state" : "translated", "value" : "あとで" } }
       }
+    },
+    "How to Play" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "How to Play" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "遊び方" } }
+      }
+    },
+    "Let's Play" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Let's Play" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "はじめる" } }
+      }
+    },
+    "Done" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Done" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "完了" } }
+      }
+    },
+    "Moving a Piece" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Moving a Piece" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "駒の動かし方" } }
+      }
+    },
+    "Tap one of your pieces to see its legal moves highlighted in green, then tap a highlighted square to move there." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Tap one of your pieces to see its legal moves highlighted in green, then tap a highlighted square to move there." } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "自分の駒をタップすると合法手が緑色でハイライト表示されます。ハイライトされたマスをタップすると移動します。" } }
+      }
+    },
+    "Dropping a Piece" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Dropping a Piece" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "持ち駒を打つ" } }
+      }
+    },
+    "Captured enemy pieces join your hand, shown below the board. Tap a piece in your hand, then tap an empty square, to drop it back onto the board as your own." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Captured enemy pieces join your hand, shown below the board. Tap a piece in your hand, then tap an empty square, to drop it back onto the board as your own." } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "取った相手の駒は盤の下に表示される持ち駒になります。持ち駒をタップしてから空きマスをタップすると、自分の駒として打つことができます。" } }
+      }
+    },
+    "Promotion" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Promotion" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "成り" } }
+      }
+    },
+    "Most pieces can flip to a stronger form when they move into, within, or out of the far three ranks. The app asks when promotion is optional, and promotes automatically when it's required." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Most pieces can flip to a stronger form when they move into, within, or out of the far three ranks. The app asks when promotion is optional, and promotes automatically when it's required." } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "多くの駒は、敵陣三段目に入る・その中で動く・そこから出るときに、より強い形へ成ることができます。成りが任意の場合はアプリが確認し、必須の場合は自動的に成ります。" } }
+      }
+    },
+    "Two Automatic Pawn Rules" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Two Automatic Pawn Rules" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "歩に関する2つの自動判定" } }
+      }
+    },
+    "You can't drop a second unpromoted pawn on a file that already has one of your own (nifu), and you can't drop a pawn that delivers checkmate on the spot (uchifuzume). Both are enforced for you." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "You can't drop a second unpromoted pawn on a file that already has one of your own (nifu), and you can't drop a pawn that delivers checkmate on the spot (uchifuzume). Both are enforced for you." } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "同じ筋に自分の成っていない歩がすでにある場合は打てません（二歩）。また、打った瞬間に詰みとなる歩打ちはできません（打ち歩詰め）。どちらも自動的に判定されます。" } }
+      }
     }
   },
   "version" : "1.0"

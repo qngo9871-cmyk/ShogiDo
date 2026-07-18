@@ -2,8 +2,9 @@ import SwiftUI
 
 struct GameView: View {
     let difficulty: AIDifficulty
+    var captureMode: String? = nil
     @Environment(\.dismiss) private var dismiss
-    @StateObject private var model = GameModel()
+    @StateObject private var model: GameModel
     @State private var selected: Square?
     @State private var selectedDrop: PieceKind?
     @State private var legalTargets: Set<Square> = []
@@ -11,6 +12,18 @@ struct GameView: View {
 
     private let human: Player = .sente
     private let squareSize: CGFloat = 38
+
+    init(difficulty: AIDifficulty, captureMode: String? = nil) {
+        self.difficulty = difficulty
+        self.captureMode = captureMode
+        #if DEBUG
+        if let captureMode {
+            _model = StateObject(wrappedValue: GameModel.captureScenario(captureMode))
+            return
+        }
+        #endif
+        _model = StateObject(wrappedValue: GameModel())
+    }
 
     var body: some View {
         VStack(spacing: 12) {
@@ -30,6 +43,15 @@ struct GameView: View {
         }
         .padding()
         .background(Color(red: 0.87, green: 0.75, blue: 0.52).ignoresSafeArea())
+        .onAppear {
+            #if DEBUG
+            if captureMode == "select" {
+                let square = Square(row: 6, col: 4)
+                selected = square
+                legalTargets = Set(model.legalBoardMoves(from: square).map(\.to))
+            }
+            #endif
+        }
         .onChange(of: model.currentPlayer) { _ in triggerAIMoveIfNeeded() }
         .confirmationDialog(String(localized: "Promote?"), isPresented: promotionBinding) {
             Button(String(localized: "Promote")) {

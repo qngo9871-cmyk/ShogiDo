@@ -61,4 +61,46 @@ final class GameModel: ObservableObject {
         lastMove = nil
         pendingPromotion = nil
     }
+
+    #if DEBUG
+    /// Staged positions for App Store screenshots — driven by the SHOGI_CAPTURE env
+    /// var (see ShogiDoApp.swift). Not reachable via real play; purely for visual
+    /// variety in marketing shots. DEBUG-only, inert in release builds.
+    static func captureScenario(_ name: String) -> GameModel {
+        let model = GameModel()
+        switch name {
+        case "hand": model.stageHandScenario()
+        case "check": model.stageCheckScenario()
+        default: break
+        }
+        return model
+    }
+
+    private func stageHandScenario() {
+        var b = Board()
+        b[Square(row: 1, col: 7)] = nil   // gote bishop -> sente's hand
+        b[Square(row: 0, col: 2)] = nil   // gote silver -> sente's hand
+        b[Square(row: 2, col: 0)] = nil   // gote pawn -> sente's hand
+        b[Square(row: 6, col: 0)] = nil   // sente pawn -> gote's hand
+        b[Square(row: 8, col: 3)] = nil   // sente gold -> gote's hand
+        b.addToHand(.sente, .bishop)
+        b.addToHand(.sente, .silver)
+        b.addToHand(.sente, .pawn)
+        b.addToHand(.gote, .pawn)
+        b.addToHand(.gote, .gold)
+        board = b
+        currentPlayer = .sente
+    }
+
+    private func stageCheckScenario() {
+        var b = Board()
+        var rook = b[Square(row: 7, col: 7)]
+        rook?.promoted = true
+        b[Square(row: 7, col: 7)] = nil
+        b[Square(row: 2, col: 4)] = nil
+        b[Square(row: 1, col: 4)] = rook
+        board = b
+        currentPlayer = .gote
+    }
+    #endif
 }

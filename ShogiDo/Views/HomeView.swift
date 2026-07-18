@@ -3,6 +3,8 @@ import SwiftUI
 struct HomeView: View {
     @StateObject private var purchases = PurchaseManager.shared
     @State private var showUpgrade = false
+    @State private var showHowToPlay = false
+    @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding = false
 
     var body: some View {
         NavigationStack {
@@ -36,10 +38,25 @@ struct HomeView: View {
                 Spacer()
             }
             .padding()
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        showHowToPlay = true
+                    } label: {
+                        Image(systemName: "questionmark.circle")
+                    }
+                }
+            }
             .navigationDestination(for: AIDifficulty.self) { difficulty in
                 GameView(difficulty: difficulty)
             }
             .sheet(isPresented: $showUpgrade) { UpgradeView() }
+            .sheet(isPresented: $showHowToPlay, onDismiss: { hasSeenOnboarding = true }) {
+                HowToPlayView(isOnboarding: !hasSeenOnboarding)
+            }
+            .onAppear {
+                if !hasSeenOnboarding { showHowToPlay = true }
+            }
         }
     }
 

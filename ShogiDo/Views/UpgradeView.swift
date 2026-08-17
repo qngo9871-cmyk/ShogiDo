@@ -20,7 +20,9 @@ struct UpgradeView: View {
                 }
                 .padding(.horizontal, 30)
 
-                Text(String(localized: "Unlock Hard AI."))
+                Text(purchases.isPro || purchases.trialActive
+                     ? String(localized: "Unlock Hard AI.")
+                     : String(localized: "Your 7-day free trial has ended. Unlock Shogi Do Pro to keep playing."))
                     .font(.system(size: 13))
                     .foregroundStyle(.white.opacity(0.6))
                     .multilineTextAlignment(.center)

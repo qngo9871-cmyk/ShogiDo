@@ -15,9 +15,15 @@ struct HomeView: View {
                 Text("Shogi Do")
                     .font(.title.bold())
 
+                if !purchases.isPro && purchases.trialActive {
+                    Text(String(format: String(localized: "Free trial — %d day(s) left"), purchases.trialDaysRemaining))
+                        .font(.footnote)
+                        .foregroundStyle(.secondary)
+                }
+
                 VStack(spacing: 12) {
                     ForEach(AIDifficulty.allCases, id: \.self) { difficulty in
-                        if difficulty.requiresPro && !purchases.isPro {
+                        if isLocked(difficulty) {
                             Button {
                                 showUpgrade = true
                             } label: {
@@ -33,6 +39,16 @@ struct HomeView: View {
                     }
                 }
                 .padding(.horizontal, 32)
+
+                if !purchases.isPro {
+                    Button {
+                        showUpgrade = true
+                    } label: {
+                        Text(purchases.trialActive ? String(localized: "Unlock Pro") : String(localized: "Trial ended — unlock to keep playing"))
+                            .font(.footnote.weight(.medium))
+                            .foregroundStyle(Color.accentColor)
+                    }
+                }
 
                 Spacer()
                 Spacer()
@@ -58,6 +74,14 @@ struct HomeView: View {
                 if !hasSeenOnboarding { showHowToPlay = true }
             }
         }
+    }
+
+    /// Every difficulty locks behind the paywall once the trial expires and
+    /// the user isn't Pro — there is no permanently free tier.
+    private func isLocked(_ difficulty: AIDifficulty) -> Bool {
+        if purchases.isPro { return false }
+        if difficulty.requiresPro { return true }
+        return !purchases.trialActive
     }
 
     private func difficultyRow(_ difficulty: AIDifficulty, locked: Bool) -> some View {

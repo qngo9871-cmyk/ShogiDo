@@ -107,6 +107,31 @@ Native iOS app for playing Shogi (Japanese chess). Dual-market release: English
   (the auth-key flags alone weren't enough this time, unlike the archived pattern in
   `~/.claude/CLAUDE.md` which only mentions the auth-key flags).
 
+- **2026-08-18 — no-free-tier-forever paywall rollout (NOT YET SUBMITTED).**
+  Sibling apps ChineseChess and SamLoc had real downloads but zero IAP purchases
+  because a permanently-free tier (easy/normal difficulty, free forever) gave casual
+  players no reason to ever pay. ShogiDo had the same structural gap: Easy/Normal AI
+  was free forever, only Hard AI (`AIDifficulty.requiresPro`) was gated. Fixed to match
+  the now-portfolio-wide pattern: `PurchaseManager` gained a 7-day trial clock
+  (`firstLaunchDate` in UserDefaults, `trialActive`/`trialDaysRemaining`,
+  `evaluateTrialStatus()` — existing installs with no stored date get a fresh 7-day
+  clock rather than an instant lockout). `HomeView.isLocked(_:)` now locks **every**
+  difficulty (not just Hard) once the trial expires and the user isn't Pro; added a
+  "Free trial — N day(s) left" banner while active and a "Trial ended — unlock to keep
+  playing" footnote/button once it isn't. `UpgradeView`'s subtitle swaps to a
+  trial-ended variant. New localization keys added to both `en` and `ja` in
+  `Localizable.xcstrings`. Also fixed a latent bug in
+  `PurchaseManager.updateEntitlementStatus()`: the `#if DEBUG` branch was a bare
+  `isPro = true` with no exemption for the `SHOGI_CAPTURE=paywall` screenshot-capture
+  mode, so a real App Store Connect paywall review screenshot would have quietly shown
+  the "already purchased" state instead of the actual paywall — now exempted so only
+  `SHOGI_CAPTURE=paywall` gets `isPro = false`, all other capture modes (home/board/
+  select/hand/check) keep the existing "force isPro so no lock/upgrade prompts leak
+  into shots" behavior from `capture_shots.py`. Build-verified
+  (`xcodebuild ... CODE_SIGNING_ALLOWED=NO build` → BUILD SUCCEEDED). **Held for Q's
+  explicit go-ahead — do not archive/export/upload/submit to App Store Connect until
+  told to.**
+
   **🟢 SUBMITTED 2026-07-19.** Q ticked the Pro IAP into version 1.0.0's own page,
   filled App Privacy nutrition labels, un-ticked Vision Pro + iPhone-on-Mac. That left
   a `reviewSubmissions` draft (`READY_FOR_REVIEW`, `submittedDate: null`) whose only

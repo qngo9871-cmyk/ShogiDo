@@ -1,242 +1,550 @@
 {
-  "sourceLanguage" : "en",
-  "strings" : {
-    "New Game" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "New Game"
+  "sourceLanguage": "en",
+  "strings": {
+    "New Game": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New Game"
           }
         },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "新規対局"
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新規対局"
           }
         }
       }
     },
-    "Settings" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Settings"
+    "Settings": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Settings"
           }
         },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "設定"
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "設定"
           }
         }
       }
     },
-    "Resign" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Resign"
+    "Resign": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resign"
           }
         },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "投了"
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "投了"
           }
         }
       }
     },
-    "You Win" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "You Win"
+    "You Win": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You Win"
           }
         },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "あなたの勝ちです"
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "あなたの勝ちです"
           }
         }
       }
     },
-    "You Lose" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "You Lose"
+    "You Lose": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You Lose"
           }
         },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "あなたの負けです"
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "あなたの負けです"
           }
         }
       }
     },
-    "Sente" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Sente (Black)" } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "先手" } }
+    "Sente": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sente (Black)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "先手"
+          }
+        }
       }
     },
-    "Gote" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Gote (White)" } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "後手" } }
+    "Gote": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gote (White)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "後手"
+          }
+        }
       }
     },
-    "Check" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Check!" } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "王手！" } }
+    "Check": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Check!"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "王手！"
+          }
+        }
       }
     },
-    "Promote?" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Promote this piece?" } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "この駒を成りますか？" } }
+    "Promote?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Promote this piece?"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "この駒を成りますか？"
+          }
+        }
       }
     },
-    "Promote" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Promote" } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "成る" } }
+    "Promote": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Promote"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "成る"
+          }
+        }
       }
     },
-    "Don't Promote" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Don't Promote" } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "成らない" } }
+    "Don't Promote": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Don't Promote"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "成らない"
+          }
+        }
       }
     },
-    "Home" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Home" } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "ホーム" } }
+    "Home": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Home"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ホーム"
+          }
+        }
       }
     },
-    "Easy" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Easy" } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "初級" } }
+    "Easy": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Easy"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "初級"
+          }
+        }
       }
     },
-    "Normal" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Normal" } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "中級" } }
+    "Normal": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Normal"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "中級"
+          }
+        }
       }
     },
-    "Hard" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Hard" } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "上級" } }
+    "Hard": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hard"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "上級"
+          }
+        }
       }
     },
-    "Unlock Pro" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Unlock Pro" } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "Pro版を購入" } }
+    "Unlock Pro": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unlock Pro"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pro版を購入"
+          }
+        }
       }
     },
-    "Hand" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Hand" } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "持ち駒" } }
+    "Hand": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hand"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "持ち駒"
+          }
+        }
       }
     },
-    "Unlock Hard AI." : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Unlock Hard AI." } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "上級AIをアンロックします。" } }
+    "Unlock Hard AI.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unlock Hard AI."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "上級AIをアンロックします。"
+          }
+        }
       }
     },
-    "Restore Purchases" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Restore Purchases" } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "購入を復元" } }
+    "Restore Purchases": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restore Purchases"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "購入を復元"
+          }
+        }
       }
     },
-    "Maybe Later" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Maybe Later" } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "あとで" } }
+    "Maybe Later": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maybe Later"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "あとで"
+          }
+        }
       }
     },
-    "How to Play" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "How to Play" } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "遊び方" } }
+    "How to Play": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How to Play"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "遊び方"
+          }
+        }
       }
     },
-    "Let's Play" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Let's Play" } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "はじめる" } }
+    "Let's Play": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Let's Play"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "はじめる"
+          }
+        }
       }
     },
-    "Done" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Done" } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "完了" } }
+    "Done": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Done"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "完了"
+          }
+        }
       }
     },
-    "Moving a Piece" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Moving a Piece" } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "駒の動かし方" } }
+    "Moving a Piece": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Moving a Piece"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "駒の動かし方"
+          }
+        }
       }
     },
-    "Tap one of your pieces to see its legal moves highlighted in green, then tap a highlighted square to move there." : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Tap one of your pieces to see its legal moves highlighted in green, then tap a highlighted square to move there." } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "自分の駒をタップすると合法手が緑色でハイライト表示されます。ハイライトされたマスをタップすると移動します。" } }
+    "Tap one of your pieces to see its legal moves highlighted in green, then tap a highlighted square to move there.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tap one of your pieces to see its legal moves highlighted in green, then tap a highlighted square to move there."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自分の駒をタップすると合法手が緑色でハイライト表示されます。ハイライトされたマスをタップすると移動します。"
+          }
+        }
       }
     },
-    "Dropping a Piece" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Dropping a Piece" } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "持ち駒を打つ" } }
+    "Dropping a Piece": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dropping a Piece"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "持ち駒を打つ"
+          }
+        }
       }
     },
-    "Captured enemy pieces join your hand, shown below the board. Tap a piece in your hand, then tap an empty square, to drop it back onto the board as your own." : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Captured enemy pieces join your hand, shown below the board. Tap a piece in your hand, then tap an empty square, to drop it back onto the board as your own." } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "取った相手の駒は盤の下に表示される持ち駒になります。持ち駒をタップしてから空きマスをタップすると、自分の駒として打つことができます。" } }
+    "Captured enemy pieces join your hand, shown below the board. Tap a piece in your hand, then tap an empty square, to drop it back onto the board as your own.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Captured enemy pieces join your hand, shown below the board. Tap a piece in your hand, then tap an empty square, to drop it back onto the board as your own."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "取った相手の駒は盤の下に表示される持ち駒になります。持ち駒をタップしてから空きマスをタップすると、自分の駒として打つことができます。"
+          }
+        }
       }
     },
-    "Promotion" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Promotion" } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "成り" } }
+    "Promotion": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Promotion"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "成り"
+          }
+        }
       }
     },
-    "Most pieces can flip to a stronger form when they move into, within, or out of the far three ranks. The app asks when promotion is optional, and promotes automatically when it's required." : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Most pieces can flip to a stronger form when they move into, within, or out of the far three ranks. The app asks when promotion is optional, and promotes automatically when it's required." } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "多くの駒は、敵陣三段目に入る・その中で動く・そこから出るときに、より強い形へ成ることができます。成りが任意の場合はアプリが確認し、必須の場合は自動的に成ります。" } }
+    "Most pieces can flip to a stronger form when they move into, within, or out of the far three ranks. The app asks when promotion is optional, and promotes automatically when it's required.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Most pieces can flip to a stronger form when they move into, within, or out of the far three ranks. The app asks when promotion is optional, and promotes automatically when it's required."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "多くの駒は、敵陣三段目に入る・その中で動く・そこから出るときに、より強い形へ成ることができます。成りが任意の場合はアプリが確認し、必須の場合は自動的に成ります。"
+          }
+        }
       }
     },
-    "Two Automatic Pawn Rules" : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Two Automatic Pawn Rules" } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "歩に関する2つの自動判定" } }
+    "Two Automatic Pawn Rules": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Two Automatic Pawn Rules"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "歩に関する2つの自動判定"
+          }
+        }
       }
     },
-    "You can't drop a second unpromoted pawn on a file that already has one of your own (nifu), and you can't drop a pawn that delivers checkmate on the spot (uchifuzume). Both are enforced for you." : {
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "You can't drop a second unpromoted pawn on a file that already has one of your own (nifu), and you can't drop a pawn that delivers checkmate on the spot (uchifuzume). Both are enforced for you." } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "同じ筋に自分の成っていない歩がすでにある場合は打てません（二歩）。また、打った瞬間に詰みとなる歩打ちはできません（打ち歩詰め）。どちらも自動的に判定されます。" } }
+    "You can't drop a second unpromoted pawn on a file that already has one of your own (nifu), and you can't drop a pawn that delivers checkmate on the spot (uchifuzume). Both are enforced for you.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can't drop a second unpromoted pawn on a file that already has one of your own (nifu), and you can't drop a pawn that delivers checkmate on the spot (uchifuzume). Both are enforced for you."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "同じ筋に自分の成っていない歩がすでにある場合は打てません（二歩）。また、打った瞬間に詰みとなる歩打ちはできません（打ち歩詰め）。どちらも自動的に判定されます。"
+          }
+        }
+      }
+    },
+    "Free trial — %d day(s) left": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Free trial — %d day(s) left"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無料体験期間 — 残り%d日"
+          }
+        }
+      }
+    },
+    "Trial ended — unlock to keep playing": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trial ended — unlock to keep playing"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "体験期間終了 — アンロックしてプレイを続ける"
+          }
+        }
+      }
+    },
+    "Your 7-day free trial has ended. Unlock Shogi Do Pro to keep playing.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your 7-day free trial has ended. Unlock Shogi Do Pro to keep playing."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7日間の無料体験期間が終了しました。Shogi Do Pro をアンロックしてプレイを続けましょう。"
+          }
+        }
       }
     }
   },
-  "version" : "1.0"
+  "version": "1.0"
 }

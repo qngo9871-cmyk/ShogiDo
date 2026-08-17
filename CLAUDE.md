@@ -128,9 +128,13 @@ Native iOS app for playing Shogi (Japanese chess). Dual-market release: English
   `SHOGI_CAPTURE=paywall` gets `isPro = false`, all other capture modes (home/board/
   select/hand/check) keep the existing "force isPro so no lock/upgrade prompts leak
   into shots" behavior from `capture_shots.py`. Build-verified
-  (`xcodebuild ... CODE_SIGNING_ALLOWED=NO build` → BUILD SUCCEEDED). **Held for Q's
-  explicit go-ahead — do not archive/export/upload/submit to App Store Connect until
-  told to.**
+  (`xcodebuild ... CODE_SIGNING_ALLOWED=NO build` → BUILD SUCCEEDED).
+
+  **2026-08-18 — archived, exported, and uploaded to App Store Connect.** Bumped to
+  v1.0.1 (build 3). Archive/export/upload all succeeded; build 3 finished processing
+  as **VALID** in ASC. **NOT YET submitted for review — held for Q's explicit
+  go-ahead**, to avoid a batch of near-simultaneous submissions across the portfolio.
+  No new `appStoreVersion` was created and no `reviewSubmission` was touched.
 
   **🟢 SUBMITTED 2026-07-19.** Q ticked the Pro IAP into version 1.0.0's own page,
   filled App Privacy nutrition labels, un-ticked Vision Pro + iPhone-on-Mac. That left

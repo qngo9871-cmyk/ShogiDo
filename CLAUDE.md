@@ -130,11 +130,12 @@ Native iOS app for playing Shogi (Japanese chess). Dual-market release: English
   into shots" behavior from `capture_shots.py`. Build-verified
   (`xcodebuild ... CODE_SIGNING_ALLOWED=NO build` → BUILD SUCCEEDED).
 
-  **2026-08-18 — archived, exported, and uploaded to App Store Connect.** Bumped to
-  v1.0.1 (build 3). Archive/export/upload all succeeded; build 3 finished processing
-  as **VALID** in ASC. **NOT YET submitted for review — held for Q's explicit
-  go-ahead**, to avoid a batch of near-simultaneous submissions across the portfolio.
-  No new `appStoreVersion` was created and no `reviewSubmission` was touched.
+  **2026-08-20 — v1.0.1 SUBMITTED, WAITING_FOR_REVIEW.** Bumped to v1.0.1 (build 3),
+  archived/exported/uploaded, build 3 `VALID`. App was already live with an `APPROVED`
+  IAP, so this was a routine update — no manual web-UI tick-in needed. New
+  appStoreVersion created via `new_version.py`; that script only patches the `en*`
+  locale's `whatsNew`, so the `ja` localization needed a manual follow-up PATCH before
+  the submission would validate (known gotcha, see other apps' CLAUDE.md notes).
 
   **🟢 SUBMITTED 2026-07-19.** Q ticked the Pro IAP into version 1.0.0's own page,
   filled App Privacy nutrition labels, un-ticked Vision Pro + iPhone-on-Mac. That left
